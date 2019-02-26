@@ -1,0 +1,1 @@
+{"ok":true,"maquinas":[{"_id":"5c0512ef1c38d437f9ecd3c0","iplocal":"172.16.0.15","ippublico":"181.123.218.234","uptime":"2 days,","macwlan0":"18:d6:c7:af:b1:39","maclan0":"null"}],"total":1}
