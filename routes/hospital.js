@@ -40,9 +40,9 @@ app.get('/:id', (req, res) => {
 // ==========================================
 // Obtener todos los hospitales
 // ==========================================
-app.get('/:desde/', [mdAutenticacion.verificaToken], (req, res, next) => {
+app.get('/', (req, res, next) => {
 
-    var desde = req.params.desde || 0;
+    var desde = req.query.desde || 0;
     desde = Number(desde);
 
     Hospital.find({})
@@ -71,7 +71,6 @@ app.get('/:desde/', [mdAutenticacion.verificaToken], (req, res, next) => {
 
             });
 });
-
 
 // ==========================================
 // Actualizar Hospital
@@ -196,4 +195,4 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
 });
 
 
-module.exports = app;
+module.exports = app
